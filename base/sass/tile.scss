@@ -1,0 +1,94 @@
+// You custom settings file to override Foundation defaults
+@import "settings";
+@import "mixins";
+
+
+
+// Hides .element-invisible code from Drupal
+.element-invisible {
+  @include element-invisible;
+}
+
+// Tile Layout Elements
+.section {
+  margin: 50px 0;
+}
+
+
+// Action Link Button Layout
+.action-links {
+  margin: 20px 0;
+  @include clearfix;
+  li {
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+  }
+}
+
+// Tags Layout
+.field-items {
+  .field-item a {
+    float: left;
+    margin-right: 5px;
+  }
+}
+
+// Swatches Mixin -- Replace colors here
+@mixin swatches($color1: #272727, $color2: #c5c5c5, $color3:#fafafa, $color4: $link-color, $color5: $accent-color) {
+  
+  li {
+    $border_sum: 2%;
+    $border_width: $border-sum/2;
+    border: 1px solid #d1d1d1;
+    background: white;
+    $margin_right: 2.2%;
+    $padding: .5%;
+    $width:((100-(4*$margin_right)-($padding)-($border_sum*5))/5);
+    width:$width;
+    margin-right: $margin-right;
+    padding: $padding;
+    display: block;
+    float: left;
+    @include clearfix;
+   
+    span {
+      display: block;
+      height: 80px;
+    }
+  }
+  
+  li.one span {
+    background: $color1;
+  }
+  
+  li.two span{
+    background: $color2;
+  }
+  
+  li.three span{
+    background: $color3;
+  }
+  
+  li.four span{
+    background: $color4;
+  }
+  
+  li.five {
+    margin-right: 0;
+   
+    span {
+      background: $color5;
+    }
+  }
+} 
+
+
+#swatches {
+  @include swatches;
+  @include clearfix;
+}
+
+
+
+

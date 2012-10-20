@@ -1,0 +1,85 @@
+/*  =Mixins
+  ------------------------------------------------------ */
+.element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.section {
+  margin: 50px 0;
+}
+
+.action-links {
+  margin: 20px 0;
+  *zoom: 1;
+}
+.action-links:before, .action-links:after {
+  display: table;
+  content: "";
+}
+.action-links:after {
+  clear: both;
+}
+.action-links li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+
+.field-items .field-item a {
+  float: left;
+  margin-right: 5px;
+}
+
+#swatches {
+  *zoom: 1;
+}
+#swatches li {
+  border: 1px solid #d1d1d1;
+  background: white;
+  width: 16.14%;
+  margin-right: 2.2%;
+  padding: 0.5%;
+  display: block;
+  float: left;
+  *zoom: 1;
+}
+#swatches li:before, #swatches li:after {
+  display: table;
+  content: "";
+}
+#swatches li:after {
+  clear: both;
+}
+#swatches li span {
+  display: block;
+  height: 80px;
+}
+#swatches li.one span {
+  background: #272727;
+}
+#swatches li.two span {
+  background: #c5c5c5;
+}
+#swatches li.three span {
+  background: #fafafa;
+}
+#swatches li.four span {
+  background: #0088cc;
+}
+#swatches li.five {
+  margin-right: 0;
+}
+#swatches li.five span {
+  background: #ff9900;
+}
+#swatches:before, #swatches:after {
+  display: table;
+  content: "";
+}
+#swatches:after {
+  clear: both;
+}

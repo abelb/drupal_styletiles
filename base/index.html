@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Welcome to Foundation</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+	<link rel="stylesheet" href="stylesheets/tile.css">
+
+	<script src="javascripts/foundation/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div class="row">
+		<div class="twelve columns">
+			<h1>Organization Name</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="six columns">
+	
+			<div class="row">
+				<div class="twelve columns">
+					
+					<div class="section">
+						<!-- H1 -->
+						<h2>This is an Example of a Header</h2>	
+						<h6>Font: Helvetica Neue #222222</h6>
+					</div>
+
+					<div class="section">
+
+					<!-- H2 or 3? -->
+						<h3>This is an Example of a Sub Head</h3>	
+						<h6>Font: Helvetica Neue #222222</h6>
+					</div>
+
+					<div class="section">
+						<h3>Paragraph style</h3>
+
+						<!-- paragraph style -->
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ttincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
+						<h6>Font: Open Sans #444444</h6>
+					</div>
+
+					<div class="section">
+						<a href="#" title="Example of a text link">Example of a text link</a>	
+					</div>
+					
+					<div class="section buttons">
+					<h3>Buttons</h3>
+						<input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit button">
+						<input type="submit" id="edit-button" name="op" value="Button" class="form-submit button">
+
+						<ul class="action-links">
+							<li><a class="tiny secondary button" href="#">Add Content</a></li>
+							<li><a class="tiny secondary button" href="#">Other Button</a></li>
+						</ul>
+					</div>
+
+					
+					<div class="section">
+						<h3>Status Message</h3>
+			            <div class="messages status alert-box success">
+			            	<h2 class="element-invisible">Status message</h2>In faucibus feugiat urna sit amet elementum.
+			            </div>       
+				    </div>
+				
+        			<div class="section">
+        				<h3>Warning Message</h3>
+			            <div class="messages warning alert-box">
+			            	<h2 class="element-invisible">Status message</h2>In faucibus feugiat urna sit amet elementum.
+			            </div>       
+				     </div>
+        
+					<div class="section">
+				        <h3>Error Message</h3>
+
+				            <div class="messages error alert-box alert">
+				            	<h2 class="element-invisible">Status message</h2>In faucibus feugiat urna sit amet elementum.
+				            </div>       
+				    </div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="six columns">
+			
+			<div class="section">
+				<ul id="swatches" class="clearfix">
+					<li class="one"><span></span></li>
+					<li class="two"><span></span></li>
+					<li class="three"><span></span></li>
+					<li class="four"><span></span></li>
+					<li class="five"><span></span></li>
+				</ul>
+			</div>
+
+			 <div class="section">
+	          
+	          <div class="block panel">
+	            <h2 class="block-title">Block Title</h2>
+	            <div class="content">
+	              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>  
+	            </div>
+	          </div>
+
+	         </div>  
+			
+			 <div class="section tabbed-nav">
+	         
+	         	<h4>Tabbed Navigation</h4>
+
+				<!-- <ul class="tabs primary">
+					<li class="active"><a href="/redhen/contact/50" class="active">Active Tab</a></li>
+					<li><a href="#">Tab2</a></li>
+					<li><a href="#">Tab3</a></li>
+					<li><a href="#">Tab4</a></li>
+				</ul> -->
+
+				<dl class="tabs primary">
+					<dd class="active"><a class="active">Active Tab</a></dd>
+					<dd><a href="#">Tab2</a></dd>
+					<dd><a href="#">Tab3</a></dd>
+					<dd><a href="#">Tab4</a></dd>
+				</dl>
+			</div>
+
+			<div class="section">
+				<h5>Tags</h5>
+				<div class="field-items">
+					<div class="field-item odd"><a href="#" class="tiny secondary button">Tag #1</a></div>
+					<div class="field-item even"><a href="#" class="tiny secondary button">Tag #2</a></div>
+					<div class="field-item odd"><a href="#" class="tiny secondary button">Tag #3</a></div>
+					<div class="field-item even"><a href="#" class="tiny secondary button">Tag #4</a></div>
+					<div class="field-item odd"><a href="#" class="tiny secondary button">Tag #5</a></div>
+					<div class="field-item even"><a href="#" class="tiny secondary button">Tag #6</a></div>
+				</div>			
+			</div>
+	</div>
+	
+	<!-- Included JS Files (Uncompressed) -->
+	<script src="javascripts/foundation/jquery.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
+	
+	<script src="javascripts/foundation/jquery.placeholder.js"></script>
+	
+	
+  <!-- Application Javascript, safe to override -->
+  <script src="javascripts/foundation/app.js"></script>
+</body>
+</html>
