@@ -11,6 +11,7 @@
 .section {
   margin: 50px 0;
   *zoom: 1;
+  padding: 0 20px;
 }
 .section:before, .section:after {
   display: table;
@@ -40,6 +41,10 @@
 .field-items .field-item a {
   float: left;
   margin-right: 5px;
+}
+
+h1#site-title {
+  padding-left: 20px;
 }
 
 h1.title {
@@ -75,22 +80,22 @@ h1.title {
   height: 70px;
 }
 #swatches li.one span {
-  background: #2ba6cb;
+  background: #e8752f;
 }
 #swatches li.two span {
-  background: #e9e9e9;
+  background: #27509a;
 }
 #swatches li.three span {
-  background: #222222;
+  background: #4aaded;
 }
 #swatches li.four span {
-  background: #5da423;
+  background: #3ca74a;
 }
 #swatches li.five {
   margin-right: 0;
 }
 #swatches li.five span {
-  background: #ffff99;
+  background: #f7d226;
 }
 #swatches:before, #swatches:after {
   display: table;

@@ -10,6 +10,7 @@
 .section {
   margin: 50px 0;
   @include clearfix;
+  padding: 0 20px;
 }
 
 
@@ -30,6 +31,10 @@
     float: left;
     margin-right: 5px;
   }
+}
+
+h1#site-title {
+  padding-left: 20px;
 }
 
 h1.title {
@@ -94,7 +99,3 @@ h1.title {
   @include swatches($color1, $color2, $color3, $color4, $color5);
   @include clearfix;
 }
-
-
-
-

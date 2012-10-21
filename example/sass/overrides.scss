@@ -1,23 +1,98 @@
+@import "compass/css3";
 @import "settings";
 @import "mixins";
 
-// Typography
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700); //Header font
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  background: $backgroundColor;
+}
+
+.row {
+  background: white;
+}
+
+
+// Headers and Links
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.subheader {
+  color: $color4;
+  text-transform: uppercase;
+}
+
+p a {
+  color: $color2;
+  text-decoration: underline;
+  &:hover {
+    color: lighten($color2, 20%);
+  }
+}
+
+// Buttons
+
+// Status Messages
+div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
+  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+  @include border-radius(4px);
+  font-size: 15px;
+  width: auto;
+  background-image: none;
+  font-family: $bodyFontFamily;
+  border: 1px solid;
+  margin: 6px 0;
+  padding: 3%;
+  font-size: 14px;
+
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+div.status { /* Normal priority messages */
+  color: $successColor;
+  background-color: #DFF0D8;
+  border-color: #D6E9C6;
+}
+
+div.warning,
+tr.warning { /* Medium priority messages */
+  color: $warningColor;
+  border-color: #FBEED5;
+  background-color: #FCF8E3;
+}
+
+div.error,
+tr.error { /* High priority messages. See also the .error declaration below. */
+  color: $alertColor;
+  border-color: #eed3d7;
+  background-color: #f2dede;
+}
 
 
 // Block styles
-
 .block { 
-  background: darken($color2, 5%);
+  background: #151c28;
   padding: 4% 6%;
   @include border-radius(3px);
 
   h2.block-title { /* Block title */
-    font-size: 1.5em;
-    line-height: 2em;
-    margin-bottom: 1em;
-    border-bottom: 1px solid darken($color3, 20%);
+    font-size: 1.9em;
+    text-transform: uppercase;
+    color: $color3;
+  }
+
+  h3 {
+    color: $color1;
+    font-style: italic;
+    font-size: 1.7em;
+    font-weight: normal;
+  }
+
+  .content p{
+    background: white;
+    padding: 20px;
   }
 }
 
@@ -35,7 +110,6 @@
     padding: 5px 13px;
     margin-right: -1px;
     text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: .05em;
     @include transition(.1s linear all);
   }
@@ -66,6 +140,97 @@ ul.tabs.primary {
     float: left;
     list-style: none;
   }
+}
+
+
+//Tags styles
+
+.field-items {
+  .field-item {
+    a {
+      @include background-image(linear-gradient(#fafafa, #fdfdfd 50%, #fdfdfd));
+      float: left;
+      margin-right: 5px;
+      padding: 0.2em 0.4em;
+      border: 1px solid #F0F0F0;
+      border-radius: 0px;
+      border-image: initial;
+      color: #666;
+      text-decoration: none;
+      text-shadow: white 0px 1px 0px;
+      font-size: 11px;
+      line-height: 1.5;
+      @include transition(.4s linear all);
+ 
+      &:hover {
+        background: lighten(#e1e1e1, 5%);
+      }
+    }
+  }
+}
+
+// Pager Style - see gist: https://gist.github.com/3299505
+
+@mixin pager($radius: 2px, $background_1: #F8F8F8, $background_2: #ECECEC, $border: #e1e1e1, $font-color: #999) {
+
+  // Pager list-style
+  li {
+    margin-right: 5px;
+    list-style: none;
+    display: inline-block;
+
+    &.last {
+      margin-right: 0;
+    }
+
+    &.pager-current a {
+      color: #666;
+      background: white;
+
+      &:hover {
+        background: white;
+      }
+    }
+
+    &.last, &.first, &.pager-previous, &.pager-next {
+
+      a {
+        padding: 1px 5px;
+      }
+    }
+  }
+
+  // Pager link style
+ a {
+    @include border-radius($radius);
+    display: block;
+    padding: 1px 5px;
+    border: 1px solid $border;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: $color2;
+    @include background-image(linear-gradient($background_1,$background_2,$background_1));
+    
+
+    &:hover {
+      @include background-image(linear-gradient($background_2,$background_1,$background_2));
+      border: 1px solid $border;
+      text-decoration: none;
+      color: lighten($color2, 20%);
+    }
+    
+    &:active {
+      @include background-image(linear-gradient(darken($background_2, 5%),$background_1,darken($background_1, 3%)));
+    }
+    @include single-transition(color, .15s, ease-in-out);
+  }
+
+}
+
+.item-list .pager {
+  text-align: left;
+  @include pager;
 }
 
 

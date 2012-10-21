@@ -109,17 +109,45 @@
 // Style Tile Settings
 
 //Edit these colors for Swatches
-$color1: #2ba6cb;
-$color2: #e9e9e9;
-$color3: #222;
-$color4: #5da423;
-$color5: #ffff99;
+// $color1: #2ba6cb;
+// $color2: #e9e9e9;
+// $color3: #222;
+// $color4: #5da423;
+// $color5: #ffff99;
+
+// $backgroundColor: #fff;
+
+// // Typography
+// $open-sans: 'Open Sans', sans-serif;
+// $open-sans-cond: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+
+// $headerFontFamily: $open-sans-cond;
+// $bodyFontFamily: $open-sans;
 
 
-// Typography
-$open-sans: 'Open Sans', sans-serif;
-$open-sans-cond: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
 
-$headerFontFamily: $open-sans-cond;
-$bodyFontFamily: $open-sans;
+
+//New Style
+
+$backgroundColor: #161c29;
+
+//Typography
+$league: 'League Gothic', Helvetica, Arial, sans-serif;
+
+$headerFontFamily: $league;
+$bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+
+//Edit these colors for Swatches
+$color1: #e8752f;
+$color2: #27509a;
+$color3: #4aaded;
+$color4: #3ca74a;
+$color5: #f7d226;
+
+
+$successColor: #468847;
+$warningColor: #C09853;
+$alertColor: #b94a48;
+
 
