@@ -4353,6 +4353,48 @@ p a:hover {
   color: #5381d4;
 }
 
+input[type="submit"] {
+  background: #3ca74a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #43ba52), color-stop(100%, #3ca74a));
+  background-image: -webkit-linear-gradient(#43ba52, #3ca74a);
+  background-image: -moz-linear-gradient(#43ba52, #3ca74a);
+  background-image: -o-linear-gradient(#43ba52, #3ca74a);
+  background-image: linear-gradient(#43ba52, #3ca74a);
+  color: white;
+  padding: 4px 20px;
+  border: 1px solid #399f47;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: "League Gothic", Helvetica, Arial, sans-serif;
+  -webkit-box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.31) inset;
+  -moz-box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.31) inset;
+  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.31) inset;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+}
+input[type="submit"]:hover {
+  background: #3ca74a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3ca74a), color-stop(100%, #359442));
+  background-image: -webkit-linear-gradient(#3ca74a, #359442);
+  background-image: -moz-linear-gradient(#3ca74a, #359442);
+  background-image: -o-linear-gradient(#3ca74a, #359442);
+  background-image: linear-gradient(#3ca74a, #359442);
+}
+input[type="submit"]:active {
+  background: #3ca74a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#e6e6e6, #ffffff);
+  background-image: -moz-linear-gradient(#e6e6e6, #ffffff);
+  background-image: -o-linear-gradient(#e6e6e6, #ffffff);
+  background-image: linear-gradient(#e6e6e6, #ffffff);
+}
+
 div.messages {
   /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
   margin: 1.5em 0;
