@@ -10,6 +10,14 @@
 
 .section {
   margin: 50px 0;
+  *zoom: 1;
+}
+.section:before, .section:after {
+  display: table;
+  content: "";
+}
+.section:after {
+  clear: both;
 }
 
 .action-links {
@@ -34,13 +42,17 @@
   margin-right: 5px;
 }
 
+h1.title {
+  font-size: 33px;
+}
+
 #swatches {
   *zoom: 1;
 }
 #swatches li {
   border: 1px solid #d1d1d1;
   background: white;
-  width: 16.14%;
+  width: 18.14%;
   margin-right: 2.2%;
   padding: 0.5%;
   display: block;
