@@ -1,0 +1,71 @@
+@import "settings";
+@import "mixins";
+
+// Typography
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700); //Header font
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+// Block styles
+
+.block { 
+  background: darken($color2, 5%);
+  padding: 4% 6%;
+  @include border-radius(3px);
+
+  h2.block-title { /* Block title */
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid darken($color3, 20%);
+  }
+}
+
+// Tabbed Navigation mixin for Drupal
+@mixin tabbed-navigation($font: $headerFontFamily, $font-size: 1.1em, $font-color: #999, $border-radius: 8px, $background_1: #F8F8F8, $background_2: #ECECEC, $border-color: #c6c6c6) {
+ 
+ a {
+    font-family: $font;
+    font-size: $font-size;
+    color: $font-color;
+    @include background-image(linear-gradient($background_1, $background_2, $background_1));
+    @include border-radius($border-radius $border-radius 0 0);
+    border: 1px solid $border-color;
+    border-bottom: 1px solid lighten($border-color, 12%);
+    padding: 5px 13px;
+    margin-right: -1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .05em;
+    @include transition(.1s linear all);
+  }
+
+  li.active a, a.active {
+    background: white;
+    border-bottom: none;
+  }
+
+  a:link,
+  a:visited {
+    display: block;
+  }
+
+  a:hover,
+  a:focus {
+    @include background-image(linear-gradient(lighten($background_1, 2%),lighten($background_2, 2%),lighten($background_1, 2%)));
+    color: #08c;
+  }
+}
+
+//	Style for Drupal Tabbed Navigation
+ul.tabs.primary {
+  @include tabbed-navigation;
+  @include clearfix();
+  
+  li {
+    float: left;
+    list-style: none;
+  }
+}
+
+

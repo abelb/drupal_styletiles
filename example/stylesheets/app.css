@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /* Requires: normalize.css */
 /* Global Reset & Standards ---------------------- */
 * {
@@ -13,7 +15,7 @@ html {
 
 body {
   background: white;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1;
   color: #222222;
@@ -110,7 +112,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockqu
 }
 
 p {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.6;
@@ -129,7 +131,7 @@ aside p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -446,7 +448,7 @@ span.prefix, span.postfix {
 }
 
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   border: 1px solid #cccccc;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1275,7 +1277,7 @@ that IE7/8 do not support :nth-child.
   color: white;
   cursor: pointer;
   display: inline-block;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 1;
@@ -4323,3 +4325,77 @@ h1.title {
 
 /*  =Mixins
   ------------------------------------------------------ */
+.block {
+  background: gainsboro;
+  padding: 4% 6%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.block h2.block-title {
+  /* Block title */
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid black;
+}
+
+ul.tabs.primary {
+  *zoom: 1;
+}
+ul.tabs.primary a {
+  font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  color: #999999;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(50%, #ececec), color-stop(100%, #f8f8f8));
+  background-image: -webkit-linear-gradient(#f8f8f8, #ececec, #f8f8f8);
+  background-image: -moz-linear-gradient(#f8f8f8, #ececec, #f8f8f8);
+  background-image: -o-linear-gradient(#f8f8f8, #ececec, #f8f8f8);
+  background-image: linear-gradient(#f8f8f8, #ececec, #f8f8f8);
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  -ms-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #c6c6c6;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 5px 13px;
+  margin-right: -1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .05em;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+}
+ul.tabs.primary li.active a, ul.tabs.primary a.active {
+  background: white;
+  border-bottom: none;
+}
+ul.tabs.primary a:link,
+ul.tabs.primary a:visited {
+  display: block;
+}
+ul.tabs.primary a:hover,
+ul.tabs.primary a:focus {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdfdfd), color-stop(50%, #f1f1f1), color-stop(100%, #fdfdfd));
+  background-image: -webkit-linear-gradient(#fdfdfd, #f1f1f1, #fdfdfd);
+  background-image: -moz-linear-gradient(#fdfdfd, #f1f1f1, #fdfdfd);
+  background-image: -o-linear-gradient(#fdfdfd, #f1f1f1, #fdfdfd);
+  background-image: linear-gradient(#fdfdfd, #f1f1f1, #fdfdfd);
+  color: #08c;
+}
+ul.tabs.primary:before, ul.tabs.primary:after {
+  display: table;
+  content: "";
+}
+ul.tabs.primary:after {
+  clear: both;
+}
+ul.tabs.primary li {
+  float: left;
+  list-style: none;
+}
