@@ -39,8 +39,13 @@ h1.title {
   font-size: 33px;
 }
 
+.block h2 {
+  font-size: 27px;
+}
 
-@mixin swatches($color1, $color2, $color3, $color4, $color5) {
+// Mixin to build swatches
+
+@mixin swatches ($color1, $color2, $color3, $color4, $color5) {
   
   li {
     $border_sum: 2%;
@@ -87,7 +92,6 @@ h1.title {
     }
   }
 } 
-
 
 #swatches {
   @include swatches($color1, $color2, $color3, $color4, $color5);

@@ -46,6 +46,10 @@ h1.title {
   font-size: 33px;
 }
 
+.block h2 {
+  font-size: 27px;
+}
+
 #swatches {
   *zoom: 1;
 }
