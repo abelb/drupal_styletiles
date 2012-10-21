@@ -39,8 +39,8 @@ h1.title {
   font-size: 33px;
 }
 
-// Swatches Mixin -- Replace colors here
-@mixin swatches($color1: #272727, $color2: #c5c5c5, $color3:#fafafa, $color4: $link-color, $color5: $accent-color) {
+
+@mixin swatches($color1, $color2, $color3, $color4, $color5) {
   
   li {
     $border_sum: 2%;
@@ -59,7 +59,7 @@ h1.title {
    
     span {
       display: block;
-      height: 80px;
+      height: 70px;
     }
   }
   
@@ -90,7 +90,7 @@ h1.title {
 
 
 #swatches {
-  @include swatches;
+  @include swatches($color1, $color2, $color3, $color4, $color5);
   @include clearfix;
 }
 
